@@ -1,6 +1,7 @@
 <?php
     echo 'Ciao!';
     echo 'come stai?';
-    phpinfo();
+    // phpinfo();
+    print_r($_SERVER);
     // entry point to ...
 ?>
