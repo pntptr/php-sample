@@ -1,2 +1,4 @@
 # Ignore for .vscode
 .vscode/
+vendor/
+
