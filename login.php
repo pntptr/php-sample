@@ -1,5 +1,7 @@
 <?php
     // controllo dei parametri
+    require_once './vendor/autoload.php';
+
     define('MIN_LEN', 8);
 
     if( !isset($_POST['email']) || !isset($_POST['password']) ){
@@ -33,5 +35,9 @@
     }
     
     echo json_encode(['msg' => 'User authenticated!']);
+
+    // visualizzo la pagina corretta usando il template engine Plates
+    $template = new League\Plates\Engine(__DIR__ . '\view');
+    echo $template->render('profile', ['name' => 'Peter']);
 
 ?>

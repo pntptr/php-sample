@@ -3,6 +3,7 @@
     //print_r($_SERVER);
     // entry point to ...
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
