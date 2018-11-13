@@ -37,7 +37,7 @@
     echo json_encode(['msg' => 'User authenticated!']);
 
     // visualizzo la pagina corretta usando il template engine Plates
-    $template = new League\Plates\Engine(__DIR__ . '\view');
+    $template = new League\Plates\Engine(__DIR__ . DIRECTORY_SEPARATOR . 'view');
     echo $template->render('profile', ['name' => 'Peter']);
 
 ?>
